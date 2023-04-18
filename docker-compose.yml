@@ -1,7 +1,16 @@
-version: "3.7"
+version: "3.8"
 services:
   api-gateway:
+    container_name: api-gateway
     build: .
     restart: always
     ports:
       - 8080:8080
+    networks:
+      default:
+        aliases:
+          - rmqnet
+
+networks:
+  default:
+    name: rmqnet
