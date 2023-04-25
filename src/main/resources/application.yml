@@ -11,11 +11,6 @@ spring:
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/product/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: PRODUCT-SERVICE
-                fallbackuri: forward:/productServiceFallBack
 
 eureka:
   instance:
