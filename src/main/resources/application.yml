@@ -31,7 +31,7 @@ eureka:
 
 logging:
   level:
-    root: INFO
+    org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping: DEBUG
 ### End Kubernetes
 
 ### Local
