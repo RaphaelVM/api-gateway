@@ -18,7 +18,7 @@ spring:
           uri: lb://AUTH-SERVICE
           predicates:
             - Path=/api/auth/**
-            -
+
 
 eureka:
   instance:
