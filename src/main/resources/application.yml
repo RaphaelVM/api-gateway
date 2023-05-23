@@ -18,6 +18,7 @@ spring:
           uri: lb://AUTH-SERVICE
           predicates:
             - Path=/api/auth/**
+            -
 
 eureka:
   instance:
@@ -31,7 +32,7 @@ eureka:
 
 logging:
   level:
-    org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping: DEBUG
+    org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping: TRACE
 ### End Kubernetes
 
 ### Local
