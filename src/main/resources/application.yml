@@ -28,6 +28,10 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+
+logging:
+  level:
+    root: INFO
 ### End Kubernetes
 
 ### Local
