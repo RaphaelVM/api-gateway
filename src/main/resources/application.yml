@@ -33,6 +33,11 @@ spring:
           predicates:
             - Path=/api/order/**
 
+        - id: rabbitmq
+          uri: http://rabbitmq:15672
+          predicates:
+            - Path=/rabbitmq/**
+
 eureka:
   instance:
     preferIpAddress: true
