@@ -12,7 +12,6 @@ spring:
     port: 5672
     username: '${RABBITMQ_DEFAULT_USER:guest}'
     password: '${RABBITMQ_DEFAULT_PASS:guest}'
-#    management-ui-url: http://rabbitmq-15672:15672
   cloud:
     gateway:
       routes:
