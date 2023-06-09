@@ -25,8 +25,6 @@ spring:
           uri: lb://AUTH-SERVICE
           predicates:
             - Path=/api/auth/**
-          filters:
-            - AuthenticationFilter
         - id: ORDER-SERVICE
           uri: lb://ORDER-SERVICE
           predicates:
