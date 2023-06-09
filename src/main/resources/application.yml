@@ -21,12 +21,12 @@ spring:
             - Path=/api/product/**
           filters:
             - AuthenticationFilter
-
         - id: AUTH-SERVICE
           uri: lb://AUTH-SERVICE
           predicates:
             - Path=/api/auth/**
-
+          filters:
+            - AuthenticationFilter
         - id: ORDER-SERVICE
           uri: lb://ORDER-SERVICE
           predicates:
